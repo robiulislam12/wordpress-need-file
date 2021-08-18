@@ -1,1 +1,10 @@
+//Input Foucs none or input ouline one here.
+input:focus, textarea:focus, select:focus { 
+    outline: none !important;
+    border-color: white !important;
+    box-shadow: 0 0 0px white !important;
+}
+
+
+
 
