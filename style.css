@@ -5,6 +5,22 @@ input:focus, textarea:focus, select:focus {
     box-shadow: 0 0 0px white !important;
 }
 
+//Label up and placeholder down style
+
+.label-border .elementor-field-group {
+    border: 1px solid #dde0e9;
+    border-radius: 15px;
+}
+
+.elementor-field-group.elementor-field-type-submit {
+    border: none;
+}
+label.elementor-field-label {
+    padding: 0 10px;
+    margin-top: -8px;
+    background: #fff;
+}
+
 
 
 
