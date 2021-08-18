@@ -21,6 +21,23 @@ label.elementor-field-label {
     background: #fff;
 }
 
+//Andreza or Hi one border style after and before
+selector .elementor-element-populated:after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 80%;
+    background: #333;
+}
+
+//Elementor Header sticky Style here
+selector.elementor-sticky--effects{
+    background: red !important;
+}
+
+
 
 
 
