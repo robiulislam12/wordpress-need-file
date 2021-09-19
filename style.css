@@ -38,6 +38,18 @@ selector.elementor-sticky--effects{
 }
 
 
+//Form Checkbox style like []
 
+.elementor-field-option{
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-column-gap: 10px;
+    align-items: center;
+}
+
+selector .elementor-field-subgroup input[type="checkbox"]{
+    height: 25px;
+    width: 25px;
+}
 
 
