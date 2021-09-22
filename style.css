@@ -52,4 +52,14 @@ selector .elementor-field-subgroup input[type="checkbox"]{
     width: 25px;
 }
 
-
+//Youtube Icon chnage Code
+.eicon-play:before {
+    content: '';
+    background: url(/wp-content/uploads/2021/09/Group-70.svg) no-repeat;
+    position: absolute;
+    height: 108px;
+    width: 108px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
