@@ -1,0 +1,89 @@
+<style>
+.elementor .elementor-element.sticky{
+    background: #FFFFFF !important;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+.admin-bar .elementor .elementor-element.sticky{
+    top: 32px;
+}
+
+.elementor .elementor-element.sticky .mega-toggle-animated-inner, .elementor .elementor-element.sticky .mega-toggle-animated-inner:before, .elementor .elementor-element.sticky .mega-toggle-animated-inner:after{
+    background: #84BD3A !important;
+    border: 1px solid #84BD3A;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.elementor .sticky .elementor-element li.mega-menu-item > a.mega-menu-link{
+    color: #000000 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.elementor .sticky .elementor-element li.mega-menu-item.mega-current_page_item > a.mega-menu-link{
+    color: #84bd3a !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.ekit-template-content-header .elementor-widget-image, .elementor-location-header .elementor-widget-image{
+    margin-bottom: 0;
+}
+.ekit-template-content-header .sticky .elementor-widget-image, .elementor-location-header .sticky .elementor-widget-image{
+    transform: scale(0.9);
+    height: auto;
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+.logo-2{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.sticky .logo-1{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 1024px) {
+    .admin-bar .elementskit-navbar-nav-default.elementskit-menu-offcanvas-elements{
+        top: 32px;
+    }
+}
+@media only screen and (max-width: 782px) {
+    .admin-bar .elementor .elementor-element.sticky, .admin-bar .elementskit-navbar-nav-default.elementskit-menu-offcanvas-elements{
+        top: 46px;
+    }
+     .elementor .elementor-element li.mega-menu-item.mega-current_page_item > a.mega-menu-link{
+        color: #84bd3a !important;
+        transition: all 0.3s ease-in-out;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .admin-bar .elementor .elementor-element.sticky, .admin-bar .elementskit-navbar-nav-default.elementskit-menu-offcanvas-elements{
+        top: 0;
+    }
+    .elementor .elementor-element li.mega-menu-item.mega-current_page_item > a.mega-menu-link{
+        color: #84bd3a !important;
+        transition: all 0.3s ease-in-out;
+    }
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+(function($){
+$(document).ready(function(){
+	    
+$(window).on('load scroll', function(){
+	var scroll = 100,
+	sticky = $('.ekit-template-content-header, .elementor-location-header').find('.elementor-section')
+
+	if ($(window).scrollTop() >= scroll) sticky.addClass('sticky')
+	else sticky.removeClass('sticky')
+})
+		
+})
+}(jQuery))
+</script>
