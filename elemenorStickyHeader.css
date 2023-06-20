@@ -1,0 +1,40 @@
+/* 
+Full Sticky Elementor header with logo change.
+
+Note:- Add class on your image
+
+*/
+
+
+selector.elementor-sticky--effects{
+    background: #fff !important;
+    color: #212121;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+selector.elementor-sticky--effects li.mega-menu-item > a.mega-menu-link{
+    color: #000000 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+selector.elementor-sticky--effects li.mega-menu-item.mega-current_page_item > a.mega-menu-link{
+        color: #84bd3a !important;
+        transition: all 0.3s ease-in-out;
+}
+
+.logo-2{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+selector.elementor-sticky--effects .logo-1{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+selector.elementor-sticky--effects .logo-2{
+    transform: scale(0.9);
+    height: auto;
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
